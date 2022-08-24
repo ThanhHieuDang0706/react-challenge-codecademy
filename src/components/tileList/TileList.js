@@ -3,14 +3,14 @@ import React from "react";
 import Tile from '../tile/Tile';
 
 const TileList = (props) => {
-  const {contacts} = props;
+  const {tiles} = props;
 
 
   return (
     <div>
-      {contacts.map((contact, index) => {
+      {tiles.map((tile, index) => {
         return (
-         <Tile contact={contact} key={index} />
+         <Tile tile={tile} key={index} />
         )
       })
       }
